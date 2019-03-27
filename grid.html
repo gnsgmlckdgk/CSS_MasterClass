@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
-    <title>CSS Grid</title>
-    <style>
-        .father {
-            display: grid;
-            grid-template-columns: 300px 150px;
-            grid-template-rows: 300px 120px;
-            grid-gap: 5px;
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+        <title>CSS Grid</title>
+        <style>
+            .father {
+                display: grid;
+                grid-auto-rows: 200px;
+                grid-template-areas:
+                    "header header header header"
+                    "content content content sidebar"
+                    "content content content sidebar"
+                    "footer footer footer footer";
+            }
+            .first {
+                grid-area: header;
+                background-color: #27ae60;
+            }
+            .second {
+                grid-area: footer;
+                background-color: #8e44ad;
+            }
+            .third {
+                grid-area: sidebar;
+                background-color: #f1c40f;
+            }
+            .fourth {
+                grid-area: content;
+                background-color: #c0392b;
+            }
+        </style>
+    </head>
 
-            grid-auto-flow: row;    /* default: row */
-            grid-auto-rows: 60px;
-            /*grid-auto-columns: 60px;*/
-            
-        }
-
-        .box {
-            background-color: #27ae60;
-
-        }
-    </style>
-  </head>
-
-  <body>
-    <div class="father">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-    </div>
-  </body>
+    <body>
+        <div class="father">
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="third"></div>
+            <div class="fourth"></div>
+        </div>
+    </body>
 </html>
