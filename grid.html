@@ -9,31 +9,33 @@
         <style>
             .father {
                 display: grid;
-                /* grid-auto-rows: 200px; */
-                /* grid-template-columns: minmax(300px, 2fr) repeat(3, 1fr); */
-                grid-template-columns: min-content repeat(3, 1fr);
+                grid-gap: 10px;
+                grid-auto-rows: 200px;
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             }
-            .first {
-                background-color: #27ae60;
+            .box:nth-child(even) {
+                background-color: #3498db;
             }
-            .second {
-                background-color: #8e44ad;
-            }
-            .third {
-                background-color: #f1c40f;
-            }
-            .fourth {
-                background-color: #c0392b;
+            .box:nth-child(odd) {
+                background-color: #34495e;
             }
         </style>
     </head>
 
     <body>
         <div class="father">
-            <div class="first">로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피, 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트로, 최종 결과물에 들어가는 실제적인 문장 내용이 채워지기 전에 시각 디자인 프로젝트 ...</div>
-            <div class="second"></div>
-            <div class="third"></div>
-            <div class="fourth"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
         </div>
     </body>
 </html>
