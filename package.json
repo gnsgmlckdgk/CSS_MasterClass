@@ -1,0 +1,20 @@
+{
+  "name": "CSS_MasterClass",
+  "version": "1.0.0",
+  "description": "CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnsgmlckdgk/CSS_MasterClass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnsgmlckdgk/CSS_MasterClass/issues"
+  },
+  "homepage": "https://github.com/gnsgmlckdgk/CSS_MasterClass#readme",
+  "scripts" : {
+    "start": "parcel index.html"
+  }
+}
