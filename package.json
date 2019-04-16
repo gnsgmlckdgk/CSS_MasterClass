@@ -14,7 +14,17 @@
     "url": "https://github.com/gnsgmlckdgk/CSS_MasterClass/issues"
   },
   "homepage": "https://github.com/gnsgmlckdgk/CSS_MasterClass#readme",
-  "scripts" : {
+  "scripts": {
     "start": "parcel index.html"
+  },
+  "dependencies": {
+    "postcss-preset-env": "^6.6.0"
+  },
+  "postcss": {
+    "plugins":{
+      "postcss-preset-env":{
+        "stage": 0
+      }
+    }
   }
 }

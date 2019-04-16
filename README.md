@@ -29,7 +29,7 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 ### Using CSS4
 
 - [x] Installing Parcel
-- [] Configuring PostCSS
+- [x] Configuring PostCSS
 - [] Testing
 
 ### CSS4 Awesomeness
