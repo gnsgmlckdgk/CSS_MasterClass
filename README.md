@@ -30,11 +30,11 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 
 - [x] Installing Parcel
 - [x] Configuring PostCSS
-- [] Testing
+- [X] Testing
 
 ### CSS4 Awesomeness
 
-- [] :matches , :not
+- [X] :matches , :not
 - [] CSS Variables
 - [] @custom-selector
 - [] @custom-media
