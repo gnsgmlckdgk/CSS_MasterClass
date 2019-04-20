@@ -1,8 +1,19 @@
 
-h1 {
-  font-family: system-ui;
-}
+main {
+  background-color: blue;
 
-h1:hover {
-  color: gray(50);
+  & section {
+    background-color: red;
+    width: 500px;
+    & li {
+      background-color: yellow;
+      width: 290px;
+      & a {
+        color: black;
+        &:hover {
+          font-size: 30px;
+        }
+      }
+    }
+  }
 }
