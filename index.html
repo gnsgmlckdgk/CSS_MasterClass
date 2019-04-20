@@ -17,15 +17,14 @@
       <li><a href="#">ex5</a></li>
     </ul>
     
+    <script type = "text/javascript" src="http://jsgetip.appspot.com"></script>
     <script>
-      const getContextPath = () => {
-        var hostIndex = location.href.length + location.host.length;
-        alert(location.href.substring(hostIndex, location.href.indexOf('/', hostIndex + 1)));
-        return location.href.substring(hostIndex, location.href.indexOf('/', hostIndex + 1));
-      }
-
       const init = () => {
-        location.href = `/${getContextPath() }/exercices/ex1/index.html`;
+        const ip = ip();
+        let contextPath = "";
+        if(ip != '127.0.0.1')
+          contextPath = "/CSS_MasterClass";
+        location.href = `/${contextPath }/exercices/ex1/index.html`;
       }
       init();
     </script>
