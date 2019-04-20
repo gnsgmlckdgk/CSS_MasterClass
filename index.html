@@ -20,6 +20,7 @@
     <script>
       const getContextPath = () => {
         var hostIndex = location.href.length + location.host.length;
+        alert(location.href.substring(hostIndex, location.href.indexOf('/', hostIndex + 1)));
         return location.href.substring(hostIndex, location.href.indexOf('/', hostIndex + 1));
       }
 
