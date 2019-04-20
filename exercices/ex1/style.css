@@ -1,0 +1,144 @@
+:root {
+  --colorOne: #d5ecf4;
+  --colorTwo: #e5efd9;
+  --colorThree: #fcf8c0;
+  --colorFour: #ebebeb;
+  --colorFive: #f4c5c3;
+  --colorSix: #e5efd8;
+  --colorSeven: #fcf8c0;
+}
+
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin-top: 50p;
+  margin-bottom: 200px;
+}
+
+.header h1 {
+  font-size: 100px;
+  margin-top: 0;
+}
+
+.threeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header .header__column {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__nav span {
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.header__nav li {
+  margin-bottom: 10px;
+}
+.header__nav li:last-child {
+  margin-bottom: 0;
+}
+
+.grid {
+  grid-auto-rows: 30vh;
+  grid-gap: 20px;
+}
+
+.grid__item {
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid .grid__item:first-child {
+  grid-row: span 2;
+  background-color: var(--colorOne);
+}
+
+.grid .grid__item:nth-child(2) {
+  grid-area: span 2 / span 2;
+  background-image: url("https://cdn.pixabay.com/photo/2019/01/05/18/24/miami-3915622_960_720.jpg");
+}
+
+.grid .grid__item:nth-child(3) {
+  background-color: var(--colorTwo);
+}
+
+.grid .grid__item:nth-child(4) {
+  grid-row: span 2;
+  background-image: url("https://cdn.pixabay.com/photo/2018/07/23/18/59/barefoot-3557605_960_720.jpg");
+}
+
+.grid .grid__item:nth-child(5) {
+  background-color: var(--colorThree);
+}
+
+.grid .grid__item:nth-child(6) {
+  background-color: var(--colorFour);
+}
+
+.grid .grid__item:nth-child(7) {
+  background-image: url("https://cdn.pixabay.com/photo/2014/10/22/17/59/couple-498457_960_720.jpg");
+}
+
+.grid .grid__item:nth-child(8) {
+  grid-area: span 2 / span 2;
+  background-color: var(--colorFive);
+}
+
+.grid .grid__item:nth-child(9) {
+  grid-row: span 2;
+  background-image: url("https://cdn.pixabay.com/photo/2018/05/11/08/11/pet-3389729_960_720.jpg");
+}
+
+.grid .grid__item:nth-child(10) {
+  grid-area: span 2 / span 2;
+  background-image: url("https://cdn.pixabay.com/photo/2019/04/15/15/08/landscape-4129533_960_720.jpg");
+}
+
+.grid .grid__item:nth-child(11) {
+  background-image: url("https://cdn.pixabay.com/photo/2019/04/17/00/20/spring-4133169_960_720.jpg");
+}
+
+.grid .grid__item:nth-child(12) {
+  background-image: url("https://cdn.pixabay.com/photo/2019/04/09/15/55/landscape-4114839_960_720.jpg");
+}
+
+.grid .grid__item:nth-child(13) {
+  grid-area: span 2 / span 2;
+  background-color: var(--colorSix);
+}
+
+.grid .grid__item:nth-child(14) {
+  background-image: url("https://cdn.pixabay.com/photo/2019/04/09/13/41/tiger-4114501_960_720.jpg");
+}
+
+.grid .grid__item:nth-child(15) {
+  background-color: var(--colorSeven);
+}
+
+.footer {
+    margin-top: 100px;
+}
+.footer__column {
+    display: flex;
+    min-height: 200px;
+}
+.footer__column:first-child {
+    justify-content: flex-end;
+}
+.footer__column:nth-child(2) {
+    justify-content: space-around;
+}
+.footer__column:last-child {
+    justify-content: flex-end;
+}
