@@ -18,8 +18,13 @@
     </ul>
     
     <script>
+      const getContextPath = () => {
+        var hostIndex = location.href.length + location.host.length;
+        return location.href.substring(hostIndex, location.href.indexOf('/', hostIndex + 1));
+      }
+
       const init = () => {
-        location.href = `/exercices/ex1/index.html`;
+        location.href = `/${getContextPath() }/exercices/ex1/index.html`;
       }
       init();
     </script>
