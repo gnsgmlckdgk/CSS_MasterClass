@@ -1,8 +1,8 @@
 
-@custom-media --ipad-size (450px <= width <= 850px);
+h1 {
+  font-family: system-ui;
+}
 
-@media(--ipad-size) {
-  body {
-    background-color: red;
-  }
+h1:hover {
+  color: gray(50);
 }
